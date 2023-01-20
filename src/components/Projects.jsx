@@ -1,19 +1,19 @@
 import React from "react";
 
-const Projects = () => {
+const Projects = ({onClickFn}) => {
   return (
     <div
       style={{
         color: "#7A7878",
         fontWeight: "500",
-        fontSize: "16px",
+        fontSize: "12px",
       }}
     >
-      <div className="mb-[5px] cursor-pointer hover:text-[#14755E]">Etiaba</div>
-      <div className="mb-[5px] cursor-pointer hover:text-[#14755E]">
+      <div onClick={()=>onClickFn("et")} className="mb-[5px] cursor-pointer hover:text-[#14755E]">Etiaba</div>
+      <div onClick={()=>onClickFn("ps")} className="mb-[5px] cursor-pointer hover:text-[#14755E]">
         Playshaka
       </div>
-      <div className="mb-[5px] cursor-pointer hover:text-[#14755E]">Jously</div>
+      <div onClick={()=>onClickFn("js")} className="mb-[5px] cursor-pointer hover:text-[#14755E]">Jously</div>
     </div>
   );
 };

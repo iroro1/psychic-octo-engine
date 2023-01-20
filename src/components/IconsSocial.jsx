@@ -9,7 +9,7 @@ const IconsSocial = ({ name, link }) => {
       <a href={link} download>
         {name === "Cv" && <Document variant="Bold" color="#6D9FFF" size={25} />}
       </a>
-      <a href={link}>
+      <a href={link} target="_blank">
         {name === "Credly" && (
           <Celsius variant="Bold" color="#0E4B3D" size={25} />
         )}

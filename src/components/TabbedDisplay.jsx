@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const TabbedDisplay = ({ dataArray }) => {
   const [activeTab, setActiveTab] = useState(0);
   const Component = dataArray[activeTab].Component;
+
   return (
     <div style={{ width: "100%", padding: "25px 36px" }}>
       <div
@@ -33,7 +34,7 @@ const TabbedDisplay = ({ dataArray }) => {
         ))}
       </div>
       <div>
-        <Component />
+        {Component}
       </div>
     </div>
   );

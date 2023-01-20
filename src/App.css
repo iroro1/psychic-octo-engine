@@ -2,9 +2,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: url(./assets//img/bg.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background: url(./assets//img/bg.svg) center center no-repeat
 }
 :root {
   --primary-color: #1bae4550;

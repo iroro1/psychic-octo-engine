@@ -81,3 +81,40 @@ body{
     border: 5px solid var(--msecondary-color);
   }
 }
+body::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  z-index: 0;
+}
+body::-webkit-scrollbar-track,
+.scroll::-webkit-scrollbar-track {
+  background: #e3e8ef;
+  z-index: 0;
+}
+body::-webkit-scrollbar-thumb,
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #101729;
+  border-radius: 20px;
+  border: 3px solid #e3e8ef;
+  z-index: 0;
+}
+
+.scroll-tiny::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.3rem;
+  z-index: 0;
+}
+.scroll-tiny::-webkit-scrollbar-track {
+  background: whitesmoke;
+  z-index: 0;
+}
+.scroll-tiny::-webkit-scrollbar-thumb {
+  background-color: rgb(91, 91, 91);
+}
+
+.scroll-hide {
+  overflow: auto;
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}

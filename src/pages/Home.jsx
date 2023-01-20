@@ -5,6 +5,7 @@ import IconsSocial from "../components/IconsSocial";
 import PlayProjects from "../components/PlayProjects";
 import Projects from "../components/Projects";
 import TabbedDisplay from "../components/TabbedDisplay";
+import TechTools from "../components/TechTools";
 import "./Home.css";
 const Home = () => {
   return (
@@ -39,24 +40,33 @@ const Home = () => {
       {/* Buttom Row */}
       <div className="buttom">
         {/* LHS */}
-        <div className="buttom-left">lhs buttom</div>
+        <div className="buttom-left">
+          <TabbedDisplay
+            dataArray={[
+              {
+                title: "Tech Tools",
+                Component: TechTools,
+              },
+            ]}
+          />
+        </div>
         {/* RHS */}
         <div className="buttom-right">
           <TabbedDisplay
-          dataArray={[
-            {
-              title:"Projects",
-              Component: Projects
-            },
-            {
-              title:"Play Projects",
-              Component: PlayProjects
-            },
-            {
-              title:"Courses",
-              Component: Courses
-            }
-          ]}
+            dataArray={[
+              {
+                title: "Projects",
+                Component: Projects,
+              },
+              {
+                title: "Play Projects",
+                Component: PlayProjects,
+              },
+              {
+                title: "Courses",
+                Component: Courses,
+              },
+            ]}
           />
         </div>
       </div>

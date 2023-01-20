@@ -1,5 +1,5 @@
-import { CreditCardOutlined, EmailRounded, GitHub } from "@mui/icons-material";
-import { Document, Celsius } from "iconsax-react";
+import { EmailRounded, GitHub } from "@mui/icons-material";
+import { Celsius, Document } from "iconsax-react";
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 

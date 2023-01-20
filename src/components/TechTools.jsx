@@ -40,7 +40,7 @@ const TechTools = () => {
         a.push(starFail);
       }
     }
-    return <div className="flex gap-1">{a}</div>;
+    return <p className="flex gap-1">{a}</p>;
   };
   return (
     <div
@@ -50,17 +50,18 @@ const TechTools = () => {
         fontSize: "12px",
       }}
     >
-      {tek.map((tool) => (
-        <p
+      {tek.map((tool,i) => (
+        <div
           style={{
             display: "flex",
             justifyContent: "space-between",
           }}
+          key={`${i}`}
           className="mb-[5px] cursor-pointer hover:text-[#14755E]"
         >
           <span>{tool.t}</span>
           <span>{genStars(tool.r)}</span>
-        </p>
+        </div>
       ))}
     </div>
   );

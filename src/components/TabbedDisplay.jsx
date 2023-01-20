@@ -13,12 +13,12 @@ const TabbedDisplay = ({ dataArray }) => {
           alignItems: "center",
           justifyContent: "flex-start",
           gap: "25px",
-          fontSize: "1.2rem",
           fontWeight: "700",
           borderBottom: "1px solid #DDD0D050",
           paddingBottom: "7px",
           marginBottom: "11px",
         }}
+        className="text-[14px] md:text-[26px]"
       >
         {dataArray.map((itm, i) => (
           <span

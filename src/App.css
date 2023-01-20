@@ -4,6 +4,14 @@ body{
   box-sizing: border-box;
   background: url(./assets//img/bg.svg) center center no-repeat
 }
+@media screen and (max-width:981px) {
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url(./assets//img/bg.svg) 
+  }
+}
 :root {
   --primary-color: #1bae4550;
   --msecondary-color: #29d46b60;
@@ -81,6 +89,46 @@ body{
     border: 5px solid var(--msecondary-color);
   }
 }
+@media screen and (max-width:571px) {
+  .cont {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* z-index: 1; */
+  }
+  .static {
+    height: 220px;
+    width: 220px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* position: absolute; */
+    /* top: 23%; */
+    /* left: 23%; */
+    z-index: 1;
+  }
+  
+  .box2 {
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    animation: animate3 1.5s alternate infinite ease-in-out;
+    z-index: 0;
+  }
+}
+
+
 body::-webkit-scrollbar,
 .scroll::-webkit-scrollbar {
   width: 10px;

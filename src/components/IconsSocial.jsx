@@ -6,10 +6,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 const IconsSocial = ({ name, link }) => {
   return (
     <div className="cursor-pointer">
-      <a href={link} download>
+      <a href={link} download rel="noreferrer">
         {name === "Cv" && <Document variant="Bold" color="#6D9FFF" size={25} />}
       </a>
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         {name === "Credly" && (
           <Celsius variant="Bold" color="#0E4B3D" size={25} />
         )}

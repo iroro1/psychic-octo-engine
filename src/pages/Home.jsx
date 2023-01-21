@@ -114,7 +114,6 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
   };
 
   const [showModal, setShowModal] = useState("");
-
   const clickFn = (name) => {
     setShowModal(name);
   };

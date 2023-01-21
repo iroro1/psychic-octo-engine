@@ -149,7 +149,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
             >
               <div
                 style={{ position: "absolute", right: "24px", top: "14px" }}
-                className="flex "
+                className="flex cursor-pointer"
               >
                 <span
                   onClick={() => setShowModal("")}

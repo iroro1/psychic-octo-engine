@@ -6,7 +6,7 @@ import PlayProjects from "../components/PlayProjects";
 import Projects from "../components/Projects";
 import TabbedDisplay from "../components/TabbedDisplay";
 import TechTools from "../components/TechTools";
-import cv from "../assets/cv.pdf";
+import ojigboleocv from "../assets/ojigboleocv.pdf";
 import "./Home.css";
 import DetailsModal from "../components/DetailsModal";
 import { ClickAwayListener } from "@mui/material";
@@ -143,11 +143,14 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                 background: "#fff",
                 position: "relative",
                 padding: "24px",
-                overflow:"auto"
+                overflow: "auto",
               }}
               className="scroll-hide"
             >
-              <div style={{position:"absolute",right:"24px",top:"24px"}} className="flex ">
+              <div
+                style={{ position: "absolute", right: "24px", top: "14px" }}
+                className="flex "
+              >
                 <span
                   onClick={() => setShowModal("")}
                   className="animate-pulse ml-auto cursor-pointer"
@@ -172,7 +175,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
               <div className="box2"></div>
             </div>
             <div className="social">
-              <IconsSocial name={"Cv"} link={cv} />
+              <IconsSocial name={"ojigboleocv"} link={ojigboleocv} />
               <IconsSocial name={"Credly"} link={social.credly} />
               <IconsSocial name={"LinkedIn"} link={social.linkedIn} />
               <IconsSocial name={"Github"} link={social.gitHub} />

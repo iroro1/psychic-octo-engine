@@ -7,7 +7,9 @@ const IconsSocial = ({ name, link }) => {
   return (
     <div className="cursor-pointer">
       <a href={link} download rel="noreferrer">
-        {name === "Cv" && <Document variant="Bold" color="#6D9FFF" size={25} />}
+        {name === "ojigboleocv" && (
+          <Document variant="Bold" color="#6D9FFF" size={25} />
+        )}
       </a>
       <a href={link} target="_blank" rel="noreferrer">
         {name === "Credly" && (

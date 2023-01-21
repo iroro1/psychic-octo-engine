@@ -137,7 +137,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
           <ClickAwayListener onClickAway={() => setShowModal("")}>
             <div
               style={{
-                width: "360px",
+                width: "320px",
                 borderRadius: "26px",
                 height: "40vh",
                 background: "#fff",

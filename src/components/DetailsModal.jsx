@@ -11,7 +11,7 @@ const DetailsModal = ({ data }) => {
         position:"relative",
       }}
       >
-        <div className="w-[320px] h-[70%]">
+        <div className="w-[280px] h-[70%]">
           <h2 className="text-[30px] font-[700] text-[#7A7878]">{title}</h2>
           <p className="text-[12px] font-[400] text-[#7A7878]">{desc}</p>
         </div>
@@ -26,12 +26,10 @@ const DetailsModal = ({ data }) => {
             <Button
               sx={{
                 width: "150px",
-                height: "45px",
+                height: "40px",
                 background: "#14755E",
                 color: "#fff",
                 borderRadius: "8px",
-                
-
                 "&:hover":{
                 background: "#14755E90",
                 }

@@ -12,7 +12,7 @@ const DetailsModal = ({ data }) => {
       }}
       >
         <div className="w-[280px] h-[70%]">
-          <h2 className="text-[30px] font-[700] text-[#7A7878]">{title}</h2>
+          <h2 className="text-[26px] font-[700] text-[#7A7878]">{title}</h2>
           <p className="text-[12px] font-[400] text-[#7A7878]">{desc}</p>
         </div>
       

@@ -18,7 +18,7 @@ const TabbedDisplay = ({ dataArray }) => {
           paddingBottom: "7px",
           marginBottom: "11px",
         }}
-        className="text-[14px] md:text-[26px]"
+        className="text-[13px] md:text-[26px]"
       >
         {dataArray.map((itm, i) => (
           <span

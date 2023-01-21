@@ -1,4 +1,4 @@
-import { Star, Star1 } from "iconsax-react";
+import { Star1 } from "iconsax-react";
 import React from "react";
 
 const TechTools = () => {

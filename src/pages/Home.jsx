@@ -99,6 +99,12 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
       desc: "A four course specialization from coursera and the University of science and technology Hong Kong.",
       snapshots: [""],
     },
+    mf: {
+      link: "https://coursera.org/share/aa5f9f3d75b6729c4002c7f64a7c2297",
+      title: "Meta Frontend Developer",
+      desc: "A nine course specialization from coursera and Meta team.",
+      snapshots: [""],
+    },
     pe: {
       link: "https://coursera.org/share/e8d93dbdee04c20321f85f82a55f1e1b",
       title: "Python for Everybody",

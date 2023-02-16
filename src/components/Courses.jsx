@@ -10,6 +10,12 @@ const Courses = ({ onClickFn }) => {
       }}
     >
       <p
+        onClick={() => onClickFn("mf")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Meta Front end Developer
+      </p>
+      <p
         onClick={() => onClickFn("cs")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

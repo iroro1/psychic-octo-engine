@@ -10,6 +10,12 @@ const Courses = ({ onClickFn }) => {
       }}
     >
       <p
+        onClick={() => onClickFn("bc")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Blockchain (Specialization)
+      </p>
+      <p
         onClick={() => onClickFn("mf")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

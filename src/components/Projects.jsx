@@ -15,7 +15,7 @@ const Projects = ({ onClickFn }) => {
         onClick={() => onClickFn("ap")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >
-        Approko Saas Accelerator
+        approko Saas Accelerator
       </div>
       <div
         onClick={() => onClickFn("av")}

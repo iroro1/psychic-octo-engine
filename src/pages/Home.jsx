@@ -32,6 +32,24 @@ const Home = () => {
       desc: "Etiaba is an all in one accounting software created to solve all accounting needs. It consist of a website, webapp and mobile app. I led the frontend team to delivering this project as part of a scrum team.",
       snapshots: [""],
     },
+    av: {
+      link: "https://avencapp.com/",
+      title: "Avenc",
+      desc: "A website with the ability to run complex marketing campaigns with ease.  ",
+      snapshots: [""],
+    },
+    ap: {
+      link: "https://react.dev.approko.be/",
+      title: "Approko",
+      desc: "The website for Approko saas accelerator template built by team. I was also responsible for building the virtual support center with ability for agents to take calls and chats",
+      snapshots: [""],
+    },
+    ci: {
+      link: "https://cecureintel.com/",
+      title: "Cecure Intelligence",
+      desc: "The website for CIL built and maintained by my team",
+      snapshots: [""],
+    },
     im: {
       link: "https://iroro1.github.io/lionK.com/imageFilter/index.html",
       title: "Image App",
@@ -108,6 +126,12 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
     mf: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/2U9DFUQ37GB6",
       title: "Meta Frontend Developer",
+      desc: "A nine course specialization from Coursera and Meta team.",
+      snapshots: [""],
+    },
+    mr: {
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DNUUUV644EKS",
+      title: "Meta React Native Specialization",
       desc: "A nine course specialization from Coursera and Meta team.",
       snapshots: [""],
     },

@@ -16,10 +16,16 @@ const Courses = ({ onClickFn }) => {
         Blockchain (Specialization)
       </p>
       <p
+        onClick={() => onClickFn("mr")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Meta Front React native (Specialization)
+      </p>
+      <p
         onClick={() => onClickFn("mf")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >
-        Meta Front end Developer
+        Meta Front end Developer (Professional Certificate)
       </p>
       <p
         onClick={() => onClickFn("cs")}

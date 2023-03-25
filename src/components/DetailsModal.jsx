@@ -14,7 +14,7 @@ const DetailsModal = ({ data }) => {
         <div className="w-[280px] h-[70%]">
           <h2
             style={{ lineHeight: "30px" }}
-            className="text-[20px] md:text-[26px]  font-[700] text-[#7A7878] "
+            className="text-[18px] md:text-[26px]  font-[700] text-[#7A7878] "
           >
             {title}
           </h2>
@@ -33,7 +33,7 @@ const DetailsModal = ({ data }) => {
         >
           <Button
             sx={{
-              width: "150px",
+              width: "130px",
               height: "40px",
               background: "#14755E",
               color: "#fff",

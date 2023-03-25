@@ -94,7 +94,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
       snapshots: [""],
     },
     po: {
-      link: "https://visionary-unicorn-01cd18.netlify.app/",
+      link: "https://ojigboleo.netlify.app/",
       title: "Portfolio 2023",
       desc: "Portfolio website for leo ojigbo. Started with a simple design on Figma and implemented the code in react js.",
       snapshots: [""],

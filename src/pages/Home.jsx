@@ -66,11 +66,25 @@ const Home = () => {
       This is a portfolio project made to mimic a music pad. Each key produces sounds and can fun to play with.`,
       snapshots: [""],
     },
+    mrk: {
+      link: "https://iroro1.github.io/lionK.com/Markdown/index.html",
+      title: "Markdown Interpreter",
+      desc: `
+      This is a portfolio project to interpret markdown syntax`,
+      snapshots: [""],
+    },
     bg: {
-      link: "https://iroro1.netlify.app/projects/backgroundgen(dom%20manipulation%202)/",
+      link: "https://iroro1.github.io/lionK.com/backgroundGen(DOM%20MANIPULATION%202)/index.html",
       title: "Background Gradient",
       desc: `
       This is a portfolio project made generate beautiful gradient colors and can be used for real projects or just for fun.`,
+      snapshots: [""],
+    },
+    quote: {
+      link: "https://iroro1.github.io/lionK.com/quote/index.html#",
+      title: "Quote Generator",
+      desc: `
+      This is a portfolio project for generating random quotes .`,
       snapshots: [""],
     },
     do: {
@@ -179,7 +193,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                 background: "#fff",
                 position: "relative",
                 padding: "24px",
-                overflow: "auto",
+                overflow: "hidden",
               }}
               className="scroll-hide"
             >

@@ -4,14 +4,14 @@ import React from "react";
 const DetailsModal = ({ data }) => {
   const { title, desc, link } = data;
   return (
-    <div className="h-[40vh] w-[100%] mt-2">
+    <div className="h-[40vh] w-[100%] mt-2 overflow-hidden">
       <div
         className="h-[100%]"
         style={{
           position: "relative",
         }}
       >
-        <div className="w-[280px] h-[70%]">
+        <div className="w-[280px] h-[65%] overflow-auto">
           <h2
             style={{ lineHeight: "30px" }}
             className="text-[18px] md:text-[26px]  font-[700] text-[#7A7878] "

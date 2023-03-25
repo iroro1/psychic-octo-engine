@@ -5,7 +5,13 @@ const TabbedDisplay = ({ dataArray }) => {
   const Component = dataArray[activeTab].Component;
 
   return (
-    <div style={{ width: "100%", padding: "25px 36px" }}>
+    <div
+      style={{
+        width: "100%",
+        padding: "25px 36px",
+        height: "260px",
+      }}
+    >
       <div
         style={{
           width: "100%",
@@ -17,8 +23,9 @@ const TabbedDisplay = ({ dataArray }) => {
           borderBottom: "1px solid #DDD0D050",
           paddingBottom: "7px",
           marginBottom: "11px",
+          overflow: "auto",
         }}
-        className="text-[13px] md:text-[26px]"
+        className="text-[13px] md:text-[24px]"
       >
         {dataArray.map((itm, i) => (
           <span
@@ -33,9 +40,7 @@ const TabbedDisplay = ({ dataArray }) => {
           </span>
         ))}
       </div>
-      <div>
-        {Component}
-      </div>
+      <div style={{ height: "200px", overflow: "auto" }}>{Component}</div>
     </div>
   );
 };

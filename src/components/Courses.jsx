@@ -7,6 +7,8 @@ const Courses = ({ onClickFn }) => {
         color: "#7A7878",
         fontWeight: "500",
         fontSize: "12px",
+        overflow: "auto",
+        height: "80%",
       }}
     >
       <p

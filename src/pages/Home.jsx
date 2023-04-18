@@ -14,6 +14,12 @@ import { CloseCircle } from "iconsax-react";
 
 const Home = () => {
   const projectData = {
+    ab: {
+      link: "https://dev.ask-betty.com/",
+      title: "Ask Betty",
+      desc: "A web application utilizes ML to predict the right gift items for your loved ones",
+      snapshots: [""],
+    },
     js: {
       link: "https://jously.com/",
       title: "Jously",

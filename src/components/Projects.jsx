@@ -47,6 +47,12 @@ const Projects = ({ onClickFn }) => {
       >
         Jously
       </div>
+      <div
+        onClick={() => onClickFn("ab")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Ask Betty
+      </div>
     </div>
   );
 };

@@ -11,6 +11,12 @@ const PlayProjects = ({ onClickFn }) => {
         height: "80%",
       }}
     >
+      {/* <div
+        onClick={() => onClickFn("pai")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Promptopia
+      </div> */}
       <div
         onClick={() => onClickFn("im")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"

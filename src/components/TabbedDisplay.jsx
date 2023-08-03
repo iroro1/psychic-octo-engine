@@ -10,6 +10,9 @@ const TabbedDisplay = ({ dataArray }) => {
         width: "100%",
         padding: "25px 36px",
         height: "260px",
+        background: "white",
+        borderRadius: "8px",
+        maxWidth: "500px",
       }}
     >
       <div
@@ -22,7 +25,7 @@ const TabbedDisplay = ({ dataArray }) => {
           fontWeight: "700",
           borderBottom: "1px solid #DDD0D050",
           paddingBottom: "7px",
-          marginBottom: "11px",
+          marginBottom: "1px",
           overflow: "auto",
         }}
         className="text-[13px] md:text-[24px]"
@@ -40,7 +43,7 @@ const TabbedDisplay = ({ dataArray }) => {
           </span>
         ))}
       </div>
-      <div style={{ height: "200px", overflow: "auto" }}>{Component}</div>
+      <div style={{ height: "230px", overflow: "auto" }}>{Component}</div>
     </div>
   );
 };

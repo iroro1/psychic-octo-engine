@@ -174,7 +174,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
     setShowModal(name);
   };
   return (
-    <div>
+    <div className="scroll-hide">
       {showModal && (
         <div
           style={{
@@ -219,7 +219,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
           </ClickAwayListener>
         </div>
       )}
-      <div className="container">
+      <div className="">
         <div className="top">
           <div className="top-left">
             <div className="cont">

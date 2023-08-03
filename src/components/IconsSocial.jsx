@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const IconsSocial = ({ name, link }) => {
   return (
-    <div className="cursor-pointer">
+    <div className="cursor-pointer border border-gray-400 bg-gray-50 rounded-full p-1">
       <a href={link} download rel="noreferrer">
         {name === "ojigboleocv" && (
           <Document variant="Bold" color="#6D9FFF" size={25} />

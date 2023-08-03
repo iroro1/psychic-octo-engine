@@ -1,3 +1,4 @@
+import { Star, StarHalfSharp } from "@mui/icons-material";
 import { Star1 } from "iconsax-react";
 import React from "react";
 
@@ -16,6 +17,10 @@ const TechTools = () => {
       r: 4,
     },
     {
+      t: "NEXT JS",
+      r: 4,
+    },
+    {
       t: "NODE /EXPRESS / SQL / NOSQL",
       r: 4,
     },
@@ -30,8 +35,18 @@ const TechTools = () => {
   ];
   const genStars = (n) => {
     const numOfStars = 5;
-    const star = <Star1 size={15} color={"#14755E"} variant="Bold" />;
-    const starFail = <Star1 size={15} color={"#A63A5A"} variant="Bold" />;
+    const star = (
+      <Star sx={{ color: "#14755E", height: "15px", width: "15px" }} />
+    );
+    const starFail = (
+      <StarHalfSharp
+        sx={{
+          color: "#A63A5A",
+          height: "15px",
+          width: "15px",
+        }}
+      />
+    );
     let a = [];
     for (let i = 0; i < numOfStars; i++) {
       if (i < n) {
@@ -50,7 +65,7 @@ const TechTools = () => {
         fontSize: "12px",
       }}
     >
-      {tek.map((tool,i) => (
+      {tek.map((tool, i) => (
         <div
           style={{
             display: "flex",

@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 
 const DetailsModal = ({ data }) => {
-  const { title, desc, link } = data;
+  const { title, desc, link, snapshots } = data;
   return (
     <div className="h-[40vh] w-[100%] mt-2 overflow-hidden">
       <div
@@ -11,41 +11,36 @@ const DetailsModal = ({ data }) => {
           position: "relative",
         }}
       >
-        <div className="w-[280px] h-[65%] overflow-auto">
+        <div className="w-[280px] h-[100%] overflow-auto">
           <h2
             style={{ lineHeight: "30px" }}
             className="text-[18px] md:text-[26px]  font-[700] text-[#7A7878] "
           >
             {title}
           </h2>
-          <p className="text-[12px] font-[400] text-[#7A7878]">{desc}</p>
+          <p className="text-[12px] font-[400] text-[#7A7878] mb-3">{desc}</p>
+          <a href={link} target="_blank" rel="noreferrer">
+            <Button
+              sx={{
+                width: "130px",
+                height: "40px",
+                background: "#14755E",
+                color: "#fff",
+                borderRadius: "8px",
+                marginBottom: "20px",
+                "&:hover": {
+                  background: "#14755E90",
+                },
+              }}
+            >
+              View
+            </Button>
+          </a>
+          {snapshots?.length > 0 &&
+            snapshots?.map((itm) => (
+              <img className="w-full" alt={title} src={itm} />
+            ))}
         </div>
-
-        <a
-          style={{
-            display: "absolute",
-            bottom: "5px",
-            right: "5px",
-          }}
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Button
-            sx={{
-              width: "130px",
-              height: "40px",
-              background: "#14755E",
-              color: "#fff",
-              borderRadius: "8px",
-              "&:hover": {
-                background: "#14755E90",
-              },
-            }}
-          >
-            View
-          </Button>
-        </a>
       </div>
     </div>
   );

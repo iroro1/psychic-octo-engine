@@ -4,9 +4,9 @@ import React from "react";
 const DetailsModal = ({ data }) => {
   const { title, desc, link, snapshots } = data;
   return (
-    <div className="h-[40vh] w-[100%] mt-2 overflow-hidden">
+    <div className="h-[40vh] w-[100%] mt-2 overflow-auto">
       <div
-        className="h-[100%]"
+        className="h-[100%] pb-5"
         style={{
           position: "relative",
         }}
@@ -38,7 +38,7 @@ const DetailsModal = ({ data }) => {
           </a>
           {snapshots?.length > 0 &&
             snapshots?.map((itm) => (
-              <img className="w-full" alt={title} src={itm} />
+              <img className="w-full mb-4" alt={title} src={itm} />
             ))}
         </div>
       </div>

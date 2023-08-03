@@ -12,6 +12,12 @@ const Courses = ({ onClickFn }) => {
       }}
     >
       <p
+        onClick={() => onClickFn("devopsaws")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        DevOps on AWS (Specialization)
+      </p>
+      <p
         onClick={() => onClickFn("bc")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

@@ -11,24 +11,24 @@ const Projects = ({ onClickFn }) => {
         height: "80%",
       }}
     >
-      {/* <div
-        onClick={() => onClickFn("finScan")}
+      <div
+        onClick={() => onClickFn("fingerprint")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >
-        Finger Print Scanner
+        Compare Fingerprints
       </div>
       <div
-        onClick={() => onClickFn("liDet")}
+        onClick={() => onClickFn("liveness")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >
         Liveness Detector
       </div>
       <div
-        onClick={() => onClickFn("ceOcr")}
+        onClick={() => onClickFn("imgToText")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >
         Cecure OCR
-      </div> */}
+      </div>
       <div
         onClick={() => onClickFn("ap")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"

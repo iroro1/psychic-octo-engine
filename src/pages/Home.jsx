@@ -11,50 +11,75 @@ import "./Home.css";
 import DetailsModal from "../components/DetailsModal";
 import { ClickAwayListener } from "@mui/material";
 import { CloseCircle } from "iconsax-react";
+import ab from "../assets/img/askbetty.jpg";
+import av from "../assets/img/avenc.jpg";
+import et from "../assets/img/etiaba.jpg";
+import fingerprint from "../assets/img/fingerprint.jpg";
+import imgToText from "../assets/img/imgToText.jpg";
+import liveness from "../assets/img/liveness.jpg";
+import ps from "../assets/img/playshaka.jpg";
 
 const Home = () => {
   const projectData = {
+    liveness: {
+      link: "https://cecureintel.com/demo/ML/liveness",
+      title: "Liveness Detector",
+      desc: "A web application utilizes ML to test liveness",
+      snapshots: [liveness],
+    },
+    imgToText: {
+      link: "https://cecureintel.com/demo/ML/cecure-ocr",
+      title: "Cecure Ocr",
+      desc: "A web application utilizes ML to convert image files to text",
+      snapshots: [imgToText],
+    },
+    fingerprint: {
+      link: "https://cecureintel.com/demo/ML/compare-fingerprints",
+      title: "Compare Fingerprints",
+      desc: "A web application utilizes ML to check fingerprints",
+      snapshots: [fingerprint],
+    },
     ab: {
       link: "https://dev.ask-betty.com/",
       title: "Ask Betty",
       desc: "A web application utilizes ML to predict the right gift items for your loved ones",
-      snapshots: [""],
+      snapshots: [ab],
     },
     js: {
       link: "https://jously.com/",
       title: "Jously",
       desc: "A web application that enables users send cards to thier loved. I led the frontend agile team to this delivery, with new features on the way",
-      snapshots: [""],
+      snapshots: [],
     },
     ps: {
       link: "https://playshaka.online/home",
       title: "Playshaka",
       desc: "A web application that keeps users glued to their devices and entertained for hours. Streaming videos, audios and radios. Realtime access to news and steady feature increments. I led the frontend agile team to this delivery.",
-      snapshots: [""],
+      snapshots: [ps],
     },
     et: {
       link: "https://etiaba.com/",
       title: "Etiaba",
       desc: "Etiaba is an all in one accounting software created to solve all accounting needs. It consist of a website, webapp and mobile app. I led the frontend team to delivering this project as part of a scrum team.",
-      snapshots: [""],
+      snapshots: [et],
     },
     av: {
       link: "https://avencapp.com/",
       title: "Avenc",
       desc: "A website with the ability to run complex marketing campaigns with ease.  ",
-      snapshots: [""],
+      snapshots: [av],
     },
     ap: {
       link: "https://react.dev.approko.be/",
       title: "Approko",
       desc: "The website for Approko saas accelerator template built by team. I was also responsible for building the virtual support center with ability for agents to take calls and chats",
-      snapshots: [""],
+      snapshots: [],
     },
     ci: {
       link: "https://cecureintel.com/",
       title: "Cecure Intelligence",
       desc: "The website for CIL built and maintained by my team",
-      snapshots: [""],
+      snapshots: [],
     },
     im: {
       link: "https://iroro1.github.io/lionK.com/imageFilter/index.html",
@@ -63,35 +88,35 @@ const Home = () => {
       This app is created using the Duke Learn to Program Js Library which adds a layer of abstraction to image processing.
       This course has increased my interest in image processing and i intend to make additional research in that field as soon as possible. My most interesting part is the Steganography part . The idea of Steganography is to hide data in images using simple Math. Utilising base 2 numbers or even decimals, you can hide images under other images or even text under images.
       `,
-      snapshots: [""],
+      snapshots: [],
     },
     dm: {
       link: "https://iroro1.github.io/lionK.com/DrumMachine/index.html",
       title: "Drum Machine",
       desc: `
       This is a portfolio project made to mimic a music pad. Each key produces sounds and can fun to play with.`,
-      snapshots: [""],
+      snapshots: [],
     },
     mrk: {
       link: "https://iroro1.github.io/lionK.com/Markdown/index.html",
       title: "Markdown Interpreter",
       desc: `
       This is a portfolio project to interpret markdown syntax`,
-      snapshots: [""],
+      snapshots: [],
     },
     bg: {
       link: "https://iroro1.github.io/lionK.com/backgroundGen(DOM%20MANIPULATION%202)/index.html",
       title: "Background Gradient",
       desc: `
       This is a portfolio project made generate beautiful gradient colors and can be used for real projects or just for fun.`,
-      snapshots: [""],
+      snapshots: [],
     },
     quote: {
       link: "https://iroro1.github.io/lionK.com/quote/index.html#",
       title: "Quote Generator",
       desc: `
       This is a portfolio project for generating random quotes .`,
-      snapshots: [""],
+      snapshots: [],
     },
     do: {
       link: "https://fdo.netlify.app/",
@@ -99,7 +124,7 @@ const Home = () => {
       desc: `
       This is a portfolio project made with react/Redux/Firebase.
 use(test@test.com/test@test.com) for login email and password. When logged in, you can enable registration from settings and test out registration.`,
-      snapshots: [""],
+      snapshots: [],
     },
     cm: {
       link: "https://contactman.netlify.app/",
@@ -111,55 +136,61 @@ React Router.
 Component state management.
 Context api for global state management.
 Making asynchronous calls to the Json placeholder fake rest api using "async/await".`,
-      snapshots: [""],
+      snapshots: [],
     },
     po: {
       link: "https://ojigboleo.netlify.app/",
       title: "Portfolio 2023",
       desc: "Portfolio website for leo ojigbo. Started with a simple design on Figma and implemented the code in react js.",
-      snapshots: [""],
+      snapshots: [],
     },
     bc: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/5QMVK4NSYRKL",
       title: "Blockchain",
       desc: " A four course specialization from Coursera and the University of Buffalo in the USA.",
-      snapshots: [""],
+      snapshots: [],
     },
     cs: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/QRKD2RYHT6YC",
       title: "Cybersecurity: Developing a Program for Your Business",
       desc: " A four course specialization from Coursera and the University system of Georgia in the USA.",
-      snapshots: [""],
+      snapshots: [],
     },
     jp: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/33L2QLQ6R8Z6",
       title: "Java Programming and Software Engineering Fundamentals",
       desc: "A five course specialization from Coursera and Duke University in the USA.",
-      snapshots: [""],
+      snapshots: [],
     },
     fr: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/B43PBP5BU5W2",
       title: "Full-Stack Web Development with React",
       desc: "A four course specialization from Coursera and the University of science and technology Hong Kong.",
-      snapshots: [""],
+      snapshots: [],
     },
     mf: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/2U9DFUQ37GB6",
       title: "Meta Frontend Developer",
       desc: "A nine course specialization from Coursera and Meta team.",
-      snapshots: [""],
+      snapshots: [],
     },
     mr: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DNUUUV644EKS",
       title: "Meta React Native Specialization",
       desc: "A nine course specialization from Coursera and Meta team.",
-      snapshots: [""],
+      snapshots: [],
     },
     pe: {
       link: "https://www.coursera.org/account/accomplishments/specialization/certificate/8VH6RXRR7JGX",
       title: "Python for Everybody",
       desc: "A five course specialization from Coursera and the University of Michigan in the USA.",
-      snapshots: [""],
+      snapshots: [],
+    },
+    devopsaws: {
+      link: "https://www.coursera.org/account/accomplishments/specialization/C7HMVLGQUCAD",
+      title: "DevOps on AWS ",
+      desc: "A five course specialization from Coursera and the University of Michigan in the USA.",
+      snapshots: [],
     },
   };
   const social = {
@@ -219,7 +250,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
           </ClickAwayListener>
         </div>
       )}
-      <div className="">
+      <div className="scroll-hide">
         <div className="top">
           <div className="top-left">
             <div className="cont">

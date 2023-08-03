@@ -1,5 +1,4 @@
 import { Star, StarHalfSharp } from "@mui/icons-material";
-import { Star1 } from "iconsax-react";
 import React from "react";
 
 const TechTools = () => {

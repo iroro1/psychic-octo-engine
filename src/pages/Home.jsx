@@ -17,10 +17,17 @@ import et from "../assets/img/etiaba.jpg";
 import fingerprint from "../assets/img/fingerprint.jpg";
 import imgToText from "../assets/img/imgToText.jpg";
 import liveness from "../assets/img/liveness.jpg";
+import jobSearch from "../assets/img/jobSearch.png";
 import ps from "../assets/img/playshaka.jpg";
 
 const Home = () => {
   const projectData = {
+    jobSearch: {
+      link: "https://expo.dev/@iroro1/rnapp?serviceType=classic&distribution=expo-go",
+      title: "Job Search Mobile App",
+      desc: "A cross functional mobile app written in react native expo and published via the expo link.",
+      snapshots: [jobSearch],
+    },
     liveness: {
       link: "https://cecureintel.com/demo/ML/liveness",
       title: "Liveness Detector",

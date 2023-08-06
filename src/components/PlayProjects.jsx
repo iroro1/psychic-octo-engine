@@ -18,6 +18,12 @@ const PlayProjects = ({ onClickFn }) => {
         Promptopia
       </div> */}
       <div
+        onClick={() => onClickFn("jobSearch")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Job Search (Mobile APP)
+      </div>
+      <div
         onClick={() => onClickFn("im")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

@@ -18,6 +18,12 @@ const Courses = ({ onClickFn }) => {
         DevOps on AWS (Specialization)
       </p>
       <p
+        onClick={() => onClickFn("saasaws")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        AWS Solutions Architect (Specialization)
+      </p>
+      <p
         onClick={() => onClickFn("bc")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

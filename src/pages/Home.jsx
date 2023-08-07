@@ -196,7 +196,13 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
     devopsaws: {
       link: "https://www.coursera.org/account/accomplishments/specialization/C7HMVLGQUCAD",
       title: "DevOps on AWS ",
-      desc: "A five course specialization from Coursera and the University of Michigan in the USA.",
+      desc: "A five course specialization from Amazon web services",
+      snapshots: [],
+    },
+    saasaws: {
+      link: "https://www.coursera.org/account/accomplishments/specialization/certificate/MEEBEQJ2WLT9",
+      title: "AWS Cloud Solutions Architect",
+      desc: "A four course specialization from Amazon web services",
       snapshots: [],
     },
   };

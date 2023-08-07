@@ -264,7 +264,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
       )}
       <div className="scroll-hide">
-        <div className="top">
+        <div className="top container">
           <div className="top-left">
             <div className="cont">
               <div className="static">

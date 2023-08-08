@@ -11,6 +11,7 @@ const PostCard = ({ post }) => {
     <a
       href={post?.url}
       target="_blank"
+      rel="noreferrer"
       className="h-[100%] border botder-[#eee] w-full mt-9 rounded-lg shadow-lg hover:shadow-xl overflow-hidden md:flex "
     >
       <img
@@ -28,6 +29,7 @@ const PostCard = ({ post }) => {
           className="text-[12px] font-thin"
           href={post?.publishedPlatform?.url}
           target="_blank"
+          rel="noreferrer"
           title={post.publishedPlatform.name}
         >
           {post?.publishedPlatform?.name}

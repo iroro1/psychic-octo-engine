@@ -19,6 +19,7 @@ import imgToText from "../assets/img/imgToText.jpg";
 import liveness from "../assets/img/liveness.jpg";
 import jobSearch from "../assets/img/jobSearch.png";
 import ps from "../assets/img/playshaka.jpg";
+import Articles from "../components/Articles";
 
 const Home = () => {
   const projectData = {
@@ -323,6 +324,21 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
               ]}
             />
           </div>
+        </div>
+
+        {/* Articles */}
+        <div className="container pb-14">
+          <TabbedDisplay
+            innerheight="100%"
+            outerHeight="100%"
+            height="100%"
+            dataArray={[
+              {
+                title: "Articles Written",
+                Component: <Articles />,
+              },
+            ]}
+          />
         </div>
       </div>
     </div>

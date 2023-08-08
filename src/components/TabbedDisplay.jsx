@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const TabbedDisplay = ({ dataArray }) => {
+const TabbedDisplay = ({
+  dataArray,
+  maxWidth = "500px",
+  innerheight = "230px",
+  outerHeight = "260px",
+}) => {
   const [activeTab, setActiveTab] = useState(0);
   const Component = dataArray[activeTab].Component;
 
@@ -9,10 +14,9 @@ const TabbedDisplay = ({ dataArray }) => {
       style={{
         width: "100%",
         padding: "25px 36px",
-        height: "260px",
+        height: outerHeight,
         background: "white",
         borderRadius: "8px",
-        maxWidth: "500px",
       }}
     >
       <div
@@ -43,7 +47,7 @@ const TabbedDisplay = ({ dataArray }) => {
           </span>
         ))}
       </div>
-      <div style={{ height: "230px", overflow: "auto" }}>{Component}</div>
+      <div style={{ height: innerheight, overflow: "auto" }}>{Component}</div>
     </div>
   );
 };

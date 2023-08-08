@@ -334,7 +334,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
             height="100%"
             dataArray={[
               {
-                title: "Articles Written",
+                title: "Articles Published",
                 Component: <Articles />,
               },
             ]}

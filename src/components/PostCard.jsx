@@ -35,7 +35,7 @@ const PostCard = ({ post }) => {
           {post?.publishedPlatform?.name}
         </a>
 
-        <p className="mt-6 text-[13px] max-w-[600px]">
+        <p title={post?.desc} className="mt-6 text-[13px] max-w-[600px]">
           {addEllipses(post?.desc, 305, 3)}
         </p>
       </div>

@@ -1,7 +1,9 @@
-import React from "react";
-const theme = localStorage.getItem("myTheme");
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const Courses = ({ onClickFn }) => {
+  const ctx = useContext(ThemeContext);
+
   return (
     <div
       style={{
@@ -11,7 +13,7 @@ const Courses = ({ onClickFn }) => {
         overflow: "auto",
         height: "80%",
       }}
-      className={`${theme === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
+      className={`${ctx.value === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
     >
       <p
         onClick={() => onClickFn("devopsaws")}

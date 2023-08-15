@@ -331,7 +331,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
 
         {/* Buttom Row */}
-        <div className="buttom">
+        <div className="container pt-[50px] flex md:flex-row flex-col items-center gap-[40px]">
           {/* LHS */}
           <div className="buttom-left">
             <TabbedDisplay

@@ -16,8 +16,8 @@ const PostCard = ({ post }) => {
         src={post?.img}
         alt={post.title}
       />
-      <div className="p-4 pl-8 relative">
-        <Share className="absolute cursor-pointer right-2 top-1 w-4 h-3 text-sm z-[999]" />
+      <div className="p-2 pl-4 relative w-full">
+        {/* <Share className="absolute cursor-pointer right-4 top-2 h-3 text-sm z-[999]" /> */}
         <h5 className="text-[18px] font-[800]">{post?.title}</h5>
         <div className="flex gap-8 mt-3 mb-1">
           <span className="text-sm font-medium">{post?.author}</span>

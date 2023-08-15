@@ -62,7 +62,6 @@ const TechTools = () => {
   return (
     <div
       style={{
-        // color: "#7A7878",
         fontWeight: "500",
         fontSize: "12px",
       }}

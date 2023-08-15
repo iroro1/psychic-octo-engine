@@ -3,7 +3,6 @@ import ThemeContext from "../context/ThemeContext";
 
 const TabbedDisplay = ({
   dataArray,
-  maxWidth = "500px",
   innerheight = "230px",
   outerHeight = "260px",
 }) => {
@@ -15,10 +14,10 @@ const TabbedDisplay = ({
     <div
       style={{
         width: "100%",
-        padding: "25px 36px",
+        padding: "25px 6px",
         height: outerHeight,
         background: ctx.value === "dark" ? "#0F172B90" : "white",
-        borderRadius: "8px",
+        borderRadius: "4px",
       }}
     >
       <div
@@ -34,7 +33,7 @@ const TabbedDisplay = ({
           marginBottom: "1px",
           overflow: "auto",
         }}
-        className="text-[13px] md:text-[24px]"
+        className="text-[13px] md:text-[24px] px-4 md:px-2"
       >
         {dataArray.map((itm, i) => (
           <span
@@ -56,7 +55,12 @@ const TabbedDisplay = ({
           </span>
         ))}
       </div>
-      <div style={{ height: innerheight, overflow: "auto" }}>{Component}</div>
+      <div
+        className="px-4 md:px-2"
+        style={{ height: innerheight, overflow: "auto" }}
+      >
+        {Component}
+      </div>
     </div>
   );
 };

@@ -23,8 +23,6 @@ import Articles from "../components/Articles";
 import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
-const theme = localStorage.getItem("myTheme");
-
 const Home = () => {
   const projectData = {
     jobSearch: {
@@ -264,7 +262,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                 width: "320px",
                 borderRadius: "26px",
                 height: "40vh",
-                background: theme === "dark" ? "#555" : "#fff",
+                background: value === "dark" ? "#555" : "#fff",
                 position: "relative",
                 padding: "24px",
                 overflow: "hidden",

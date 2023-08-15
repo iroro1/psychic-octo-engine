@@ -1,4 +1,7 @@
+import { Share } from "@mui/icons-material";
 import React from "react";
+import { WhatsappShareButton } from "react-share";
+
 export const addEllipses = (txt, maxLength, numOfDots = 3) => {
   let dots = "";
   for (let i = 0; i < numOfDots; i++) {
@@ -8,18 +11,14 @@ export const addEllipses = (txt, maxLength, numOfDots = 3) => {
 };
 const PostCard = ({ post }) => {
   return (
-    <a
-      href={post?.url}
-      target="_blank"
-      rel="noreferrer"
-      className="h-[100%] border botder-[#eee] w-full mt-9 rounded-lg shadow-lg hover:shadow-xl overflow-hidden md:flex "
-    >
+    <div className="h-[100%] border botder-[#eee] w-full mt-9 rounded-lg shadow-lg hover:shadow-xl overflow-hidden md:flex relative">
       <img
         className="w-full md:min-w-[300px] md:max-w-[300px]"
         src={post?.img}
         alt={post.title}
       />
-      <div className="p-4 pl-8">
+      <div className="p-4 pl-8 relative">
+        <Share className="absolute cursor-pointer right-2 top-1 w-4 h-3 text-sm z-[999]" />
         <h5 className="text-[18px] font-[800]">{post?.title}</h5>
         <div className="flex gap-8 mt-3 mb-1">
           <span className="text-sm font-medium">{post?.author}</span>
@@ -34,12 +33,19 @@ const PostCard = ({ post }) => {
         >
           {post?.publishedPlatform?.name}
         </a>
-
+        <a
+          className="text-[12px] bg-green-700 text-white p-1 rounded-full ml-5"
+          href={post?.url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Read More
+        </a>
         <p title={post?.desc} className="mt-6 text-[13px] max-w-[600px]">
           {addEllipses(post?.desc, 305, 3)}
         </p>
       </div>
-    </a>
+    </div>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import post1 from "../assets/postsImg/post1.png";
 import post2 from "../assets/postsImg/post2.png";
 import post3 from "../assets/postsImg/post3.png";
+import post4 from "../assets/postsImg/post4.png";
 import PostCard from "./PostCard";
 
 const Articles = () => {
@@ -40,6 +41,19 @@ const Articles = () => {
       author: "Leo Ojigbo",
       datePublished: "June 6, 2023",
       desc: "A smart contract is used in the blockchain as an automated way to transact.\n Let's explain this with an illustration. A man named Paul and his wife Amy live in Africa. Amy loves to buy expensive designer shoes and bags. Amy works as a Software Engineer.  Amy expects to get paid next weekend but saw a designer shoe for sale at 1000 dollars.",
+      publishedPlatform: {
+        name: "CIL Digital Innovation Guide",
+        url: "https://www.linkedin.com/newsletters/cil-digital-innovation-guide-6976468488890531840/",
+      },
+    },
+    {
+      id: 4,
+      url: "https://www.linkedin.com/pulse/tech-short-story-amazon-qldb-cecureintelligence%3FtrackingId=SmhZCasQSHSW%252F5geh2TaaA%253D%253D/?trackingId=SmhZCasQSHSW%2F5geh2TaaA%3D%3D",
+      title: "Tech Short Story: Amazon QLDB",
+      img: post4,
+      author: "Leo Ojigbo",
+      datePublished: "August 15, 2023",
+      desc: "In today's data-driven world, understanding and interpreting the vast amount of information we collect is crucial for making informed decisions. Analytics is the scientific process of discovering and communicating meaningful patterns found in data, and it is increasingly being used in various industries to gain insights and make better decisions. ",
       publishedPlatform: {
         name: "CIL Digital Innovation Guide",
         url: "https://www.linkedin.com/newsletters/cil-digital-innovation-guide-6976468488890531840/",

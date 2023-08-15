@@ -1,5 +1,6 @@
 import { Star, StarHalfSharp } from "@mui/icons-material";
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const TechTools = () => {
   const tek = [
@@ -56,10 +57,12 @@ const TechTools = () => {
     }
     return <p className="flex gap-1">{a}</p>;
   };
+  const ctx = useContext(ThemeContext);
+
   return (
     <div
       style={{
-        color: "#7A7878",
+        // color: "#7A7878",
         fontWeight: "500",
         fontSize: "12px",
       }}
@@ -73,7 +76,13 @@ const TechTools = () => {
           key={`${i}`}
           className="mb-[5px] cursor-pointer hover:text-[#14755E]"
         >
-          <span>{tool.t}</span>
+          <span
+            className={`${
+              ctx.value === "dark" ? "text-[#bbb]" : "text-[#7A7878]"
+            }`}
+          >
+            {tool.t}
+          </span>
           <span>{genStars(tool.r)}</span>
         </div>
       ))}

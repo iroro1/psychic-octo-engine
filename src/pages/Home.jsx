@@ -10,7 +10,7 @@ import ojigboleocv from "../assets/ojigboleocv.pdf";
 import "./Home.css";
 import DetailsModal from "../components/DetailsModal";
 import { ClickAwayListener } from "@mui/material";
-import { CloseCircle } from "iconsax-react";
+import { CloseCircle, Moon, Sun } from "iconsax-react";
 import ab from "../assets/img/askbetty.jpg";
 import av from "../assets/img/avenc.jpg";
 import et from "../assets/img/etiaba.jpg";
@@ -20,6 +20,10 @@ import liveness from "../assets/img/liveness.jpg";
 import jobSearch from "../assets/img/jobSearch.png";
 import ps from "../assets/img/playshaka.jpg";
 import Articles from "../components/Articles";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
+
+const theme = localStorage.getItem("myTheme");
 
 const Home = () => {
   const projectData = {
@@ -218,8 +222,27 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
   const clickFn = (name) => {
     setShowModal(name);
   };
+  const { value, setValue } = useContext(ThemeContext);
+
   return (
     <div className="scroll-hide">
+      {value === "dark" ? (
+        <Sun
+          className="fixed right-3 top-3 cursor-pointer"
+          onClick={() => {
+            localStorage.setItem("myTheme", "light");
+            setValue("light");
+          }}
+        />
+      ) : (
+        <Moon
+          className="fixed right-3 top-3 cursor-pointer"
+          onClick={() => {
+            localStorage.setItem("myTheme", "dark");
+            setValue("dark");
+          }}
+        />
+      )}
       {showModal && (
         <div
           style={{
@@ -241,7 +264,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                 width: "320px",
                 borderRadius: "26px",
                 height: "40vh",
-                background: "#fff",
+                background: theme === "dark" ? "#555" : "#fff",
                 position: "relative",
                 padding: "24px",
                 overflow: "hidden",
@@ -256,7 +279,11 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                   onClick={() => setShowModal("")}
                   className="animate-pulse ml-auto cursor-pointer"
                 >
-                  <CloseCircle variant="Bold" color="#A63A5A" size={27} />
+                  <CloseCircle
+                    variant="Bold"
+                    color={value === "dark" ? "#ccc" : "#A63A5A"}
+                    size={27}
+                  />
                 </span>
               </div>
               <DetailsModal data={projectData[showModal]} />
@@ -286,9 +313,22 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
 
           <div className="top-right">
             <h2>
-              <span>Leo</span> OJIGBO
+              <span
+                className={`${
+                  value === "dark" ? "text-[#bbb]" : "text-[#14755e]"
+                }`}
+              >
+                Leo
+              </span>{" "}
+              OJIGBO
             </h2>
-            <h1>Software Engineer</h1>
+            <h1
+              className={`${
+                value === "dark" ? "text-[#bbb]" : "text-[#14755e]"
+              } text-[96px] w-[600px] leading-[95px] font-[300]`}
+            >
+              Software Engineer
+            </h1>
           </div>
         </div>
 

@@ -14,11 +14,11 @@ const DetailsModal = ({ data }) => {
         <div className="w-[280px] h-[100%] overflow-auto">
           <h2
             style={{ lineHeight: "30px" }}
-            className="text-[18px] md:text-[26px]  font-[700] text-[#7A7878] "
+            className="text-[18px] md:text-[26px]  font-[700] "
           >
             {title}
           </h2>
-          <p className="text-[12px] font-[400] text-[#7A7878] mb-3">{desc}</p>
+          <p className="text-[12px] font-[400] mb-3">{desc}</p>
           <a href={link} target="_blank" rel="noreferrer">
             <Button
               sx={{

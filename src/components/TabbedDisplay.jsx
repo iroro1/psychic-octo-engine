@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const TabbedDisplay = ({
   dataArray,
@@ -8,6 +9,7 @@ const TabbedDisplay = ({
 }) => {
   const [activeTab, setActiveTab] = useState(0);
   const Component = dataArray[activeTab].Component;
+  const ctx = useContext(ThemeContext);
 
   return (
     <div
@@ -15,7 +17,7 @@ const TabbedDisplay = ({
         width: "100%",
         padding: "25px 36px",
         height: outerHeight,
-        background: "white",
+        background: ctx.value === "dark" ? "#0F172B90" : "white",
         borderRadius: "8px",
       }}
     >
@@ -37,7 +39,14 @@ const TabbedDisplay = ({
         {dataArray.map((itm, i) => (
           <span
             style={{
-              color: i === activeTab ? "#0E4B3D" : "#14755E",
+              color:
+                ctx.value === "dark"
+                  ? i === activeTab
+                    ? "#fff"
+                    : "#ffffff80"
+                  : i === activeTab
+                  ? "#0E4B3D"
+                  : "#14755E",
               cursor: "pointer",
             }}
             key={itm.title}

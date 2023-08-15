@@ -61,7 +61,7 @@ const Articles = () => {
     },
   ];
   return (
-    <section className="h-full pb7">
+    <section className="h-full pb-7">
       {posts.reverse().map((post) => (
         <PostCard key={post.id} post={post} />
       ))}

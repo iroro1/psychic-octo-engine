@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 const Projects = ({ onClickFn }) => {
+  const ctx = useContext(ThemeContext);
+
   return (
     <div
       style={{
-        color: "#7A7878",
         fontWeight: "500",
         fontSize: "12px",
         overflow: "auto",
         height: "80%",
       }}
+      className={`${ctx.value === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
     >
       <div
         onClick={() => onClickFn("fingerprint")}

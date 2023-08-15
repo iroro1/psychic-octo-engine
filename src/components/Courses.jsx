@@ -1,15 +1,17 @@
 import React from "react";
+const theme = localStorage.getItem("myTheme");
 
 const Courses = ({ onClickFn }) => {
   return (
     <div
       style={{
-        color: "#7A7878",
+        // color: "#7A7878",
         fontWeight: "500",
         fontSize: "12px",
         overflow: "auto",
         height: "80%",
       }}
+      className={`${theme === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
     >
       <p
         onClick={() => onClickFn("devopsaws")}

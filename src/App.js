@@ -8,6 +8,7 @@ function App() {
   const [appTheme, setApptheme] = useState(null);
   useEffect(() => {
     !theme && localStorage.setItem("myTheme", "dark");
+    !theme ? setApptheme("dark") : setApptheme(theme);
   }, []);
 
   return (

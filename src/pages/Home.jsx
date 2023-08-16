@@ -208,6 +208,12 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
       desc: "A four course specialization from Amazon web services",
       snapshots: [],
     },
+    cln: {
+      link: "https://colornames.netlify.app/",
+      title: "Colornames",
+      desc: "A website that gives users the names of about 2332 colours and also allows users to copy the color codes.",
+      snapshots: [],
+    },
   };
   const social = {
     credly: "https://www.credly.com/users/leo-ojigbo",

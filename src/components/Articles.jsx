@@ -48,7 +48,7 @@ const Articles = () => {
     },
     {
       id: 4,
-      url: "https://www.linkedin.com/pulse/tech-short-story-amazon-qldb-cecureintelligence%3FtrackingId=SmhZCasQSHSW%252F5geh2TaaA%253D%253D/?trackingId=SmhZCasQSHSW%2F5geh2TaaA%3D%3D",
+      url: "https://www.linkedin.com/pulse/tech-short-story-amazon-qldb-cecureintelligence%3FtrackingId=SmhZCasQSHSW%252F5geh2TaaA%253D%253D/?trackingId=SmhZCasQSHSW%2F5geh2TaaA%3D%3Dhttps://www.linkedin.com/pulse/tech-short-story-amazon-qldb-cecureintelligence/?trackingId=afnC5GLCTFaM160pmq5BcQ%3D%3D",
       title: "Tech Short Story: Amazon QLDB",
       img: post4,
       author: "Leo Ojigbo",

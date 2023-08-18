@@ -1,4 +1,4 @@
-import { Star, StarHalfSharp } from "@mui/icons-material";
+import { Star, StarTwoTone } from "@mui/icons-material";
 import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 
@@ -39,9 +39,10 @@ const TechTools = () => {
       <Star sx={{ color: "#14755E", height: "15px", width: "15px" }} />
     );
     const starFail = (
-      <StarHalfSharp
+      <StarTwoTone
         sx={{
           color: "#A63A5A",
+          bgColor: "#A63A5A",
           height: "15px",
           width: "15px",
         }}

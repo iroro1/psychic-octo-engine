@@ -18,6 +18,7 @@ import fingerprint from "../assets/img/fingerprint.jpg";
 import imgToText from "../assets/img/imgToText.jpg";
 import liveness from "../assets/img/liveness.jpg";
 import jobSearch from "../assets/img/jobSearch.png";
+import chatApp from "../assets/img/chatApp.png";
 import ps from "../assets/img/playshaka.jpg";
 import Articles from "../components/Articles";
 import { useContext } from "react";
@@ -25,10 +26,16 @@ import ThemeContext from "../context/ThemeContext";
 
 const Home = () => {
   const projectData = {
+    chatApp: {
+      link: "https://expo.dev/accounts/iroro1/projects/code-athon-3/updates/ec97448c-32dd-44fb-a3ac-71f657aa6911",
+      title: "Chat Mobile App",
+      desc: "A cross functional mobile app written in react native expo and published via the expo link. Download Expo Go on your device to test the app",
+      snapshots: [chatApp],
+    },
     jobSearch: {
       link: "https://expo.dev/@iroro1/rnapp?serviceType=classic&distribution=expo-go",
       title: "Job Search Mobile App",
-      desc: "A cross functional mobile app written in react native expo and published via the expo link.",
+      desc: "A cross functional mobile app written in react native expo and published via the expo link. Download Expo Go on your device to test the app",
       snapshots: [jobSearch],
     },
     liveness: {

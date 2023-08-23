@@ -16,6 +16,12 @@ const PlayProjects = ({ onClickFn }) => {
       className={`${ctx.value === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
     >
       <div
+        onClick={() => onClickFn("chatApp")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        Chat App UI (Mobile APP)
+      </div>
+      <div
         onClick={() => onClickFn("cln")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

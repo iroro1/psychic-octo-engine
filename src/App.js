@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import "./App.css";
 import ThemeContext from "./context/ThemeContext";
 import Main from "./pages/Main";
@@ -25,7 +26,9 @@ function App() {
             : "bg-[#ffffff90] text-[#333]"
         }`}
       >
+        {/* <ToastContainer> */}
         <Main />
+        {/* </ToastContainer> */}
       </div>
     </ThemeContext.Provider>
   );

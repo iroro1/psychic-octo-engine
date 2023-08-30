@@ -1,31 +1,41 @@
-import React, { useState } from "react";
+import { ClickAwayListener } from "@mui/material";
+import { CloseCircle, Moon, Sun } from "iconsax-react";
+import React, { useContext, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ab from "../assets/img/askbetty.jpg";
+import av from "../assets/img/avenc.jpg";
+import chatApp from "../assets/img/chatApp.png";
+import et from "../assets/img/etiaba.jpg";
+import fingerprint from "../assets/img/fingerprint.jpg";
+import imgToText from "../assets/img/imgToText.jpg";
+import jobSearch from "../assets/img/jobSearch.png";
+import liveness from "../assets/img/liveness.jpg";
+import ps from "../assets/img/playshaka.jpg";
 import profpic from "../assets/img/profpic.jpeg";
+import recipieAppUi from "../assets/img/recipieAppUI.png";
+import ojigboleocv from "../assets/ojigboleocv.pdf";
+import Articles from "../components/Articles";
 import Courses from "../components/Courses";
+import DetailsModal from "../components/DetailsModal";
 import IconsSocial from "../components/IconsSocial";
 import PlayProjects from "../components/PlayProjects";
 import Projects from "../components/Projects";
 import TabbedDisplay from "../components/TabbedDisplay";
 import TechTools from "../components/TechTools";
-import ojigboleocv from "../assets/ojigboleocv.pdf";
-import "./Home.css";
-import DetailsModal from "../components/DetailsModal";
-import { ClickAwayListener } from "@mui/material";
-import { CloseCircle, Moon, Sun } from "iconsax-react";
-import ab from "../assets/img/askbetty.jpg";
-import av from "../assets/img/avenc.jpg";
-import et from "../assets/img/etiaba.jpg";
-import fingerprint from "../assets/img/fingerprint.jpg";
-import imgToText from "../assets/img/imgToText.jpg";
-import liveness from "../assets/img/liveness.jpg";
-import jobSearch from "../assets/img/jobSearch.png";
-import chatApp from "../assets/img/chatApp.png";
-import ps from "../assets/img/playshaka.jpg";
-import Articles from "../components/Articles";
-import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
+import "./Home.css";
 
 const Home = () => {
   const projectData = {
+    recipieApp: {
+      type: "mobileApp",
+      ios: "exp://u.expo.dev/update/ba393cf1-d5f2-4aed-b89a-d195ce746d0a",
+      android: "exp://u.expo.dev/update/0d9cb84e-a562-47d2-a4dc-f578918b3fc7",
+      title: "Chat Mobile App",
+      desc: "A cross functional mobile app written in react native expo and published via the expo link. Download Expo Go on your device to test the app",
+      snapshots: [recipieAppUi],
+    },
     chatApp: {
       link: "https://expo.dev/accounts/iroro1/projects/code-athon-3/updates/ec97448c-32dd-44fb-a3ac-71f657aa6911",
       title: "Chat Mobile App",
@@ -254,6 +264,8 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
           }}
         />
       )}
+      <ToastContainer />
+
       {showModal && (
         <div
           style={{

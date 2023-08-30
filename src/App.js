@@ -26,9 +26,7 @@ function App() {
             : "bg-[#ffffff90] text-[#333]"
         }`}
       >
-        {/* <ToastContainer> */}
         <Main />
-        {/* </ToastContainer> */}
       </div>
     </ThemeContext.Provider>
   );

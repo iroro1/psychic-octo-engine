@@ -16,14 +16,14 @@ const DetailsModal = ({ data }) => {
     );
   };
   return (
-    <div className="h-[40vh] w-[100%] mt-2 overflow-auto">
+    <div className="h-[100%] w-[100%] mt-2 overflow-auto scroll-hide">
       <div
         className="h-[100%] pb-5"
         style={{
           position: "relative",
         }}
       >
-        <div className="w-[280px] h-[100%] overflow-auto">
+        <div className="w-[100%] h-[100%]">
           <h2
             style={{ lineHeight: "30px" }}
             className="text-[18px] md:text-[26px]  font-[700] "

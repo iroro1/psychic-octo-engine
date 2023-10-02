@@ -56,8 +56,8 @@ const TabbedDisplay = ({
         ))}
       </div>
       <div
-        className="px-4 md:px-2"
-        style={{ height: innerheight, overflow: "auto" }}
+        className="px-4 md:px-2  pt-2 overflow-auto"
+        style={{ height: innerheight }}
       >
         {Component}
       </div>

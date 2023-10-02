@@ -280,23 +280,22 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
             justifyContent: "center",
             alignItems: "center",
           }}
+          className="backdrop-blur-sm"
         >
           <ClickAwayListener onClickAway={() => setShowModal("")}>
             <div
               style={{
-                width: "320px",
                 borderRadius: "26px",
-                height: "40vh",
                 background: value === "dark" ? "#555" : "#fff",
                 position: "relative",
                 padding: "24px",
                 overflow: "hidden",
               }}
-              className="scroll-hide"
+              className="scroll-hide w-[90%] h-[350px] md:w-[400px]"
             >
               <div
                 style={{ position: "absolute", right: "24px", top: "14px" }}
-                className="flex cursor-pointer"
+                className="flex cursor-pointer w-full"
               >
                 <span
                   onClick={() => setShowModal("")}
@@ -315,7 +314,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
       )}
       <div className="scroll-hide">
-        <div className="top container">
+        <div className="top container scroll-hide">
           <div className="top-left">
             <div className="cont">
               <div className="static">
@@ -356,9 +355,9 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
 
         {/* Buttom Row */}
-        <div className="container pt-[50px] flex md:flex-row flex-col items-center gap-[40px]">
+        <div className="container pt-[50px] flex md:flex-row flex-col items-center gap-[40px] scroll-hide">
           {/* LHS */}
-          <div className="buttom-left">
+          <div className="buttom-left ">
             <TabbedDisplay
               dataArray={[
                 {
@@ -369,7 +368,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
             />
           </div>
           {/* RHS */}
-          <div className="buttom-right">
+          <div className="buttom-right ">
             <TabbedDisplay
               dataArray={[
                 {

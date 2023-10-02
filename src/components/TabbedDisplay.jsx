@@ -33,7 +33,7 @@ const TabbedDisplay = ({
           marginBottom: "1px",
           overflow: "auto",
         }}
-        className="text-[13px] md:text-[24px] px-4 md:px-2"
+        className="text-[0.8rem] md:text-[1.1rem] px-4 md:px-2"
       >
         {dataArray.map((itm, i) => (
           <span

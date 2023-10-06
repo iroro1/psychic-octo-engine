@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ab from "../assets/img/askbetty.jpg";
 import av from "../assets/img/avenc.jpg";
+import maps from "../assets/img/maps.jpeg";
 import chatApp from "../assets/img/chatApp.png";
 import et from "../assets/img/etiaba.jpg";
 import fingerprint from "../assets/img/fingerprint.jpg";
@@ -53,6 +54,12 @@ const Home = () => {
       title: "Liveness Detector",
       desc: "A web application utilizes ML to test liveness",
       snapshots: [liveness],
+    },
+    maps: {
+      link: "https://atlas.cecurepractice.link/",
+      title: "Interactive maps",
+      desc: "A web application utilizes maps api to display locations on a map with markers and levels on interactivity. Just hit the login BUTTON.",
+      snapshots: [maps],
     },
     imgToText: {
       link: "https://cecureintel.com/demo/ML/cecure-ocr",

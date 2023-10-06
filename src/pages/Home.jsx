@@ -7,6 +7,7 @@ import ab from "../assets/img/askbetty.jpg";
 import av from "../assets/img/avenc.jpg";
 import maps from "../assets/img/maps.jpeg";
 import chatApp from "../assets/img/chatApp.png";
+import heal from "../assets/img/heal.png";
 import et from "../assets/img/etiaba.jpg";
 import fingerprint from "../assets/img/fingerprint.jpg";
 import imgToText from "../assets/img/imgToText.jpg";
@@ -48,6 +49,12 @@ const Home = () => {
       title: "Job Search Mobile App",
       desc: "A cross functional mobile app written in react native expo and published via the expo link. Download Expo Go on your device to test the app",
       snapshots: [jobSearch],
+    },
+    heal: {
+      link: "https://heallence.com/",
+      title: "Heallence.com",
+      desc: "A web application utilizing ML/AI run diagnoses for clients. I happen to be a part of the team that got this application from ideation to production.",
+      snapshots: [heal],
     },
     liveness: {
       link: "https://cecureintel.com/demo/ML/liveness",

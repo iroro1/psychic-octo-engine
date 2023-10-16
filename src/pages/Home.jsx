@@ -390,7 +390,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                   Component: <Projects onClickFn={clickFn} />,
                 },
                 {
-                  title: "Play Projects",
+                  title: "Others",
                   Component: <PlayProjects onClickFn={clickFn} />,
                 },
                 {

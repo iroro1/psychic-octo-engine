@@ -3,6 +3,7 @@ import post1 from "../assets/postsImg/post1.png";
 import post2 from "../assets/postsImg/post2.png";
 import post3 from "../assets/postsImg/post3.png";
 import post4 from "../assets/postsImg/post4.png";
+import post5 from "../assets/postsImg/post5.png";
 import PostCard from "./PostCard";
 
 const Articles = () => {
@@ -54,6 +55,19 @@ const Articles = () => {
       author: "Leo Ojigbo",
       datePublished: "August 15, 2023",
       desc: "In today's data-driven world, understanding and interpreting the vast amount of information we collect is crucial for making informed decisions. Analytics is the scientific process of discovering and communicating meaningful patterns found in data, and it is increasingly being used in various industries to gain insights and make better decisions. ",
+      publishedPlatform: {
+        name: "CIL Digital Innovation Guide",
+        url: "https://www.linkedin.com/newsletters/cil-digital-innovation-guide-6976468488890531840/",
+      },
+    },
+    {
+      id: 5,
+      url: "https://www.linkedin.com/pulse/tech-short-story-maintaining-anonymity-blockchain-d8zrc%3FtrackingId=rbqDjl7jTWW27B1YraQpHg%253D%253D/?trackingId=rbqDjl7jTWW27B1YraQpHg%3D%3D",
+      title: "Tech Short Story: Maintaining Anonymity on the Blockchain",
+      img: post5,
+      author: "Leo Ojigbo",
+      datePublished: "November 14, 2023",
+      desc: "In a world not too far from our own, where technology and innovation have taken center stage, there exists a revolutionary concept known as the blockchain. This technology, which initially gained fame through cryptocurrencies, has now evolved into a powerful tool for maintaining anonymity and privacy in the digital realm. Our story takes us through the intriguing journey of how individuals have harnessed the potential of blockchain to maintain their anonymity, ensuring a secure and confidential online existence. ",
       publishedPlatform: {
         name: "CIL Digital Innovation Guide",
         url: "https://www.linkedin.com/newsletters/cil-digital-innovation-guide-6976468488890531840/",

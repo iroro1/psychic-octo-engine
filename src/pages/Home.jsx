@@ -403,7 +403,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
 
         {/* Articles */}
-        <div className="container pb-14">
+        <div className="md:container pb-14">
           <TabbedDisplay
             innerheight="100%"
             outerHeight="100%"

@@ -25,11 +25,10 @@ const PostCard = ({ post }) => {
             }}
             onClick={() => console.log("shared successfully!")}
           >
-            <button>Share 🔗</button>
+            <button>🔗</button>
           </RWebShare>
         </div>
-        {/* <Share className="absolute cursor-pointer right-4 top-2 h-3 text-sm z-[999]" /> */}
-        <h5 className="text-[18px] font-[800]">{post?.title}</h5>
+        <h5 className="text-[18px] font-[800] w-[90%]">{post?.title}</h5>
         <div className="flex gap-8 mt-3 mb-1">
           <span className="text-sm font-medium">{post?.author}</span>
           <span className="text-sm  text-green-700">{post?.datePublished}</span>

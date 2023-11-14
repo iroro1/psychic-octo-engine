@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
         <div className="absolute cursor-pointer right-4 top-2 h-3 text-sm z-[999]">
           <RWebShare
             data={{
-              text: addEllipses(post?.desc, 305, 3),
+              text: post?.title + " :  " + addEllipses(post?.desc, 205, 3),
               url: "https://ojigboleo.netlify.app/",
               title: post?.title,
             }}

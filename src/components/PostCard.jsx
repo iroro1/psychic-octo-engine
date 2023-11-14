@@ -1,5 +1,5 @@
 import React from "react";
-
+import { RWebShare } from "react-web-share";
 export const addEllipses = (txt, maxLength, numOfDots = 3) => {
   let dots = "";
   for (let i = 0; i < numOfDots; i++) {
@@ -16,6 +16,18 @@ const PostCard = ({ post }) => {
         alt={post.title}
       />
       <div className="p-2 pl-4 relative w-full">
+        <div className="absolute cursor-pointer right-4 top-2 h-3 text-sm z-[999]">
+          <RWebShare
+            data={{
+              text: addEllipses(post?.desc, 305, 3),
+              url: "https://ojigboleo.netlify.app/",
+              title: post?.title,
+            }}
+            onClick={() => console.log("shared successfully!")}
+          >
+            <button>Share 🔗</button>
+          </RWebShare>
+        </div>
         {/* <Share className="absolute cursor-pointer right-4 top-2 h-3 text-sm z-[999]" /> */}
         <h5 className="text-[18px] font-[800]">{post?.title}</h5>
         <div className="flex gap-8 mt-3 mb-1">

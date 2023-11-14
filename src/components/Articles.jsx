@@ -62,7 +62,7 @@ const Articles = () => {
     },
     {
       id: 5,
-      url: "https://www.linkedin.com/pulse/tech-short-story-maintaining-anonymity-blockchain-d8zrc%3FtrackingId=rbqDjl7jTWW27B1YraQpHg%253D%253D/?trackingId=rbqDjl7jTWW27B1YraQpHg%3D%3D",
+      url: "https://www.linkedin.com/pulse/tech-short-story-maintaining-anonymity-blockchain-d8zrc?trk=news-guest_share-article",
       title: "Tech Short Story: Maintaining Anonymity on the Blockchain",
       img: post5,
       author: "Leo Ojigbo",

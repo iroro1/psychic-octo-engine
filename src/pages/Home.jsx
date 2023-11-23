@@ -304,6 +304,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
                 position: "relative",
                 padding: "24px",
                 overflow: "hidden",
+                minHeight: "300px",
               }}
               className="scroll-hide w-[90%] h-[350px] md:w-[400px]"
             >

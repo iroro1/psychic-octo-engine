@@ -328,7 +328,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
       )}
       <div className="scroll-hide">
-        <div className="top container scroll-hide">
+        <div className="top container scroll-hide mx-auto">
           <div className="top-left">
             <div className="cont">
               <div className="static">
@@ -403,7 +403,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
 
         {/* Articles */}
-        <div className="md:container pb-14">
+        <div className="md:container pb-14 mx-auto">
           <TabbedDisplay
             innerheight="100%"
             outerHeight="100%"

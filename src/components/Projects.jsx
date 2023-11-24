@@ -15,6 +15,12 @@ const Projects = ({ onClickFn }) => {
       className={`${ctx.value === "dark" ? "text-[#bbb]" : "text-[#7A7878]"}`}
     >
       <div
+        onClick={() => onClickFn("vsc")}
+        className="mb-[5px] cursor-pointer hover:text-[#14755E]"
+      >
+        VirtualSoft Consult
+      </div>
+      <div
         onClick={() => onClickFn("heal")}
         className="mb-[5px] cursor-pointer hover:text-[#14755E]"
       >

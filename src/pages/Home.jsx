@@ -8,6 +8,7 @@ import av from "../assets/img/avenc.jpg";
 import maps from "../assets/img/maps.jpeg";
 import chatApp from "../assets/img/chatApp.png";
 import heal from "../assets/img/heal.png";
+import vsc from "../assets/img/vsc.jpeg";
 import et from "../assets/img/etiaba.jpg";
 import fingerprint from "../assets/img/fingerprint.jpg";
 import imgToText from "../assets/img/imgToText.jpg";
@@ -49,6 +50,12 @@ const Home = () => {
       title: "Job Search Mobile App",
       desc: "A cross functional mobile app written in react native expo and published via the expo link. Download Expo Go on your device to test the app",
       snapshots: [jobSearch],
+    },
+    vsc: {
+      link: "https://www.virtualsoftconsult.co.uk/",
+      title: "VirtualSoft Consult",
+      desc: "A web application for a client in the Uk. At VirtualSoft Consultancy, we're your dedicated partner for success. Whether you're a business seeking transformation or an individual looking to excel in the IT industry, we have you covered. days.",
+      snapshots: [vsc],
     },
     heal: {
       link: "https://heallence.com/",

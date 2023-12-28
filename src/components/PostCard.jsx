@@ -9,7 +9,7 @@ export const addEllipses = (txt, maxLength, numOfDots = 3) => {
 };
 const PostCard = ({ post }) => {
   return (
-    <div className="h-[100%] border botder-[#eee] w-full mt-9 rounded-lg shadow-lg hover:shadow-xl overflow-hidden md:flex relative">
+    <div className="h-[100%] lg:min-h-[350px] border botder-[#eee] w-full mt-9 rounded-lg shadow-lg hover:shadow-xl overflow-hidden md:flex relative xl:w-[47%]">
       <img
         className="w-full md:min-w-[300px] md:max-w-[300px]"
         src={post?.img}

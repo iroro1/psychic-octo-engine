@@ -377,7 +377,7 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
         </div>
 
         {/* Buttom Row */}
-        <div className="container pt-[50px] flex md:flex-row flex-col items-center gap-[40px] scroll-hide">
+        <div className=" w-[90%] mx-auto pt-[50px] flex md:flex-row flex-col items-center gap-[40px] ">
           {/* LHS */}
           <div className="buttom-left ">
             <TabbedDisplay
@@ -412,17 +412,19 @@ Making asynchronous calls to the Json placeholder fake rest api using "async/awa
 
         {/* Articles */}
         <div className="md:container pb-14 mx-auto">
-          <TabbedDisplay
-            innerheight="100%"
-            outerHeight="100%"
-            height="100%"
-            dataArray={[
-              {
-                title: "Articles Published",
-                Component: <Articles />,
-              },
-            ]}
-          />
+          <div>
+            <TabbedDisplay
+              innerheight="100%"
+              outerHeight="100%"
+              height="100%"
+              dataArray={[
+                {
+                  title: "Articles Published",
+                  Component: <Articles />,
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>

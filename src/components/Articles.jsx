@@ -75,7 +75,7 @@ const Articles = () => {
     },
   ];
   return (
-    <section className="h-full pb-7 w-full">
+    <section className="h-full pb-7 w-full md:flex md:flex-row md:flex-wrap xl:gap-[5px] xl:justify-between">
       {posts.reverse().map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
